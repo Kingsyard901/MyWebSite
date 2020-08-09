@@ -1,0 +1,281 @@
+    /* HTML Tag Selectors */
+    
+    body {
+        margin: 0;
+        /* I'll change the font-family later */
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    h1,
+    h2 {
+        color: #66BFBF;
+    }
+    
+    h3 {
+        color: #11999E;
+    }
+    
+    p {
+        color: #40514E;
+    }
+    
+    a {
+        color: #84a9ac;
+    }
+    
+    hr {
+        color: #EAF6F6;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 10px dotted;
+        width: 10%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    /* Class Selectors */
+    /* DIV Class Selectors */
+    
+    .hello {
+        font-family: 'Sacramento', cursive;
+    }
+    
+    .intrText {
+        font-weight: normal;
+        line-height: 2;
+    }
+    
+    .circularImage {
+        border-radius: 100%;
+    }
+    
+    .topContainer {
+        background-color: #EAF6F6;
+        position: relative;
+        padding-top: 100px;
+        text-align: center;
+    }
+    
+    .topCloud {
+        position: absolute;
+        right: 200px;
+        top: 50px;
+    }
+    
+    .bottomCloud {
+        position: absolute;
+        left: 250px;
+        bottom: 230px;
+    }
+    
+    .mountain {
+        position: relative;
+        top: 3px;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .middleContainer {
+        margin-top: 100px;
+    }
+    
+    .profileText {
+        max-width: 80%;
+        margin: auto;
+    }
+    /* .skills {} */
+    
+    .responsive-img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .single-greyscale {
+        filter: grayscale(100%);
+    }
+    
+    .skill-row {
+        width: 40%;
+        margin: 100px auto 100px auto;
+        text-align: left;
+    }
+    /* .skillImageOne {
+    max-width: 100px;
+    float: left;
+    margin-right: 30px;
+}
+
+.skillImageTwo {
+    max-width: 100px;
+    float: right;
+    margin-left: 30px;
+}
+
+.skillImages {
+    margin-left: 30px;
+    filter: grayscale(100%);
+} */
+    
+    .skill-row p {
+        line-height: 1;
+    }
+    
+    .bottomContainer {
+        background-color: #66BFBF;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        line-height: 2;
+    }
+    
+    .bottomContainer p {
+        color: #EAF6F6;
+    }
+    
+    .bottomContainer a {
+        color: #11999E;
+        text-decoration: none;
+    }
+    
+    .footer-link {
+        margin: 20px;
+    }
+    
+    .contact-me {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        max-width: 80%;
+        margin: auto;
+    }
+    
+    .btn {
+        background-color: #66BFBF;
+        color: whitesmoke;
+        text-decoration: none;
+        line-height: 4;
+        padding: 13px;
+        border-radius: 12px;
+        font-weight: bold;
+    }
+    
+    .btn:hover {
+        background-color: #11999E;
+    }
+    
+    a:hover {
+        color: #EAF6F6;
+    }
+    
+    .contact-icons {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: center;
+        word-spacing: 75px;
+        max-width: 80%;
+        margin: auto;
+    }
+    
+    .faves {
+        margin-bottom: 100px;
+        margin-left: 30px;
+    }
+    /* Project Cards */
+    
+    .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        /* 5px rounded corners */
+        max-width: 25%;
+        margin: 15px;
+    }
+    
+    .flexCard {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /* On mouse-over, add a deeper shadow */
+    
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    /* Add some padding inside the card container */
+    
+    .container {
+        padding: 2px 16px;
+    }
+    
+    img {
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .gallery-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    div.gallery {
+        margin: 15px;
+        border: 1px solid #ccc;
+        /* float: left; */
+        width: 480px;
+    }
+    
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+    
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+    
+    div.desc {
+        padding: 15px;
+        text-align: left;
+    }
+    
+    .BugTicText {
+        text-align: center;
+        padding: 25px 200px 25px 200px;
+    }
+    /* ID Selectors - Try not to use */
+    
+    #juniorIntro {
+        font-weight: bold;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .bottomCloud {
+            left: 210px;
+            bottom: 200px;
+        }
+        .flexCard {
+            flex-direction: column;
+        }
+        .card {
+            max-width: 100%;
+            margin: 10px;
+        }
+        .gallery-container {
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+        div.gallery {
+            width: 180px;
+        }
+        /* .BugTicVideo {
+            width: auto;
+            height: auto;
+            margin: 10px;
+        } */
+        .BugTicText {
+            text-align: left;
+            padding: 20px;
+            margin: 10px;
+        }
+    }
